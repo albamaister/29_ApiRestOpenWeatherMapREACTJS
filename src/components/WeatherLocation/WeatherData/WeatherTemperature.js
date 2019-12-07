@@ -16,7 +16,7 @@ import './styles.css';
 const icons = {
     [SUN]: "day-sunny",
     [CLOUD]: "cloud",
-    [THUNDER]: "day-thunderstore",
+    [THUNDER]: "day-thunderstorm",
     [RAIN]: "rain",
     [SNOW]: "snow",
     [DRIZZLE]: "day-showers"

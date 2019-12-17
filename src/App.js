@@ -3,6 +3,8 @@ import Paper from '@material-ui/core/Paper';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 import "./App.css";
 import { Grid ,Col, Row } from 'react-flexbox-grid';
 import LocationList from "./components/LocationList";
@@ -38,7 +40,16 @@ const cities = [
                     <Grid>
                         <Row>
                             <Col xs={12}>
-                                <AppBar title="Weather App"></AppBar>
+                            <AppBar position="static">
+                                <Toolbar>
+                                <IconButton edge="start" color="inherit" aria-label="menu">
+                                    <MenuIcon />
+                                </IconButton>
+                                    <Typography variant="h6">
+                                    Weather App
+                                    </Typography>                                   
+                                </Toolbar>
+                                </AppBar>                                
                             </Col>
                         </Row>
                         <Row>
